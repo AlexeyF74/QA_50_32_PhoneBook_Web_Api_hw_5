@@ -1,17 +1,17 @@
 package ui_tests;
 
 import dto.User;
-import manager.AppManager;
+import manager.ApplicationManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ContactPage;
 import pages.HomePage;
 import pages.LoginPage;
 
-public class LoginTests extends AppManager {
+public class LoginTests extends ApplicationManager {
     @Test
     public void loginPositiveTest(){
-        // System.out.println("first test");
+        System.out.println("first test");
         HomePage homePage = new HomePage(getDriver());
         homePage.clickBtnLogin();
         LoginPage loginPage = new LoginPage(getDriver());

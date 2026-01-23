@@ -1,7 +1,7 @@
 package ui_tests;
 
 import dto.User;
-import manager.AppManager;
+import manager.ApplicationManager;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,7 +12,7 @@ import pages.LoginPage;
 import java.util.Random;
 import static utils.UserFactory.*;
 
-public class RegistrationTests extends AppManager {
+public class RegistrationTests extends ApplicationManager {
     LoginPage loginPage;
 
     @BeforeMethod
