@@ -48,7 +48,7 @@ public class LoginPage extends BasePage {
         pause(3);
     }
 
-    public String closeAlertReturnText(){
+    public static String closeAlertReturnText(){
         Alert alert = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.alertIsPresent());
         String text = alert.getText();
